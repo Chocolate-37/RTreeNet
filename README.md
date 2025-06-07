@@ -13,3 +13,21 @@ conda install pytorch==1.10.1 torchvision==0.11.2 cudatoolkit=10.2 -c pytorch -y
 pip install cycler einops h5py pyyaml==5.4.1 scikit-learn==0.24.2 scipy tqdm matplotlib==3.4.2
 pip install pointnet2_ops_lib/.
 ```
+### Tree Fine-Scale Segmentation
+
+- Train RTreeNet
+```bash
+cd part_segmentation
+python main.py --model RTreeNet
+# please add other paramemters as you wish.
+```
+
+- Test RTreeNet
+```bash
+cd part_segmentation
+# Suppose your weight file is actually located at: checkpoints/Demo1/best_insiou_model.pth
+python main_CPA_per_recall_f1.py --eval True --exp_name Demo1 --model_type insiou --model RTreeNet
+python main.py --model RTreeNet
+# please add other paramemters as you wish.
+```
+
