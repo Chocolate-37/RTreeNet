@@ -26,7 +26,7 @@ python main.py --model RTreeNet
 ```bash
 cd part_segmentation
 # Suppose your weight file is actually located at: checkpoints/Demo1/best_insiou_model.pth
-python main_CPA_per_recall_f1.py --eval True --exp_name Demo1 --model_type insiou --model RTreeNet
+python main.py --eval True --exp_name Demo1 --model_type insiou --model RTreeNet
 # please add other paramemters as you wish.
 ```
 
