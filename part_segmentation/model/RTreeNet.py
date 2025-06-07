@@ -459,7 +459,6 @@ class ACD(nn.Module):
 
         return concatenate
 
-# CSCA 模块
 class CSCA(nn.Module):
     def __init__(self, input_channel, transformer_dim, num_heads, dim_head):
         super(CSCA, self).__init__()
