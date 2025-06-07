@@ -405,7 +405,6 @@ class PointTransformerLayer(nn.Module):
         x = self.proj_drop(x)
         return x
 
-# CCTA 模块
 class CCTA(nn.Module):
     def __init__(self, input_channel):
         super(CCTA, self).__init__()
