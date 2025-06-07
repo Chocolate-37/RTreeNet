@@ -30,3 +30,10 @@ python main.py --eval True --exp_name Demo1 --model_type insiou --model RTreeNet
 # please add other paramemters as you wish.
 ```
 
+## Acknowledgment
+
+Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
+
+[PointMLP](https://github.com/ma-xu/pointMLP-pytorch),
+[Point-NN](https://github.com/ZrrSkywalker/Point-NN)
+
